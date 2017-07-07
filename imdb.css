@@ -1,0 +1,19 @@
+div.container {
+  width: 70%;
+  background: white;
+  position:relative;
+  text-align:left;
+  margin:10px auto;
+  margin-bottom:60px;
+  
+}
+text{
+position:absolute;
+}
+
+h1{
+	
+	font-size:40px;
+	line-height:20px;
+	
+}
