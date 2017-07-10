@@ -1,7 +1,5 @@
 <html>
 <head>
-
-<h3 align="left"> Upcoming Bollywood Movies</h3>
 <link ref="stylesheet" type="text/css" href="rec.css">
 <link rel="stylesheet" href="movieCSS.css"></link>
 <style>
@@ -13,22 +11,34 @@ h3 {
 #ii {
     padding:5px;
 }
-
-
-::-webkit-input-placeholder {
-   text-align: center;
+#headers {
+	margin: -10px 0 0 0;
+	width: 100%;
 }
-
+#margins {
+	margin:0px 160px 20px 150px;
+}
+#naviReached {
+	color: #424230;
+    font: 12px Arial,sans-serif;
+    font-weight: normal;
+}
+#searchimg{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1px;
+	line-height: 30px;
+}
 </style>
 </head>
 
+<body style="padding-bottom:30px;">
+<!--#include file="header.html"-->
 
-<body bgcolor="white" style="margin: 30px 200px 20px 200px">
- <img src="mb3.jpg" width="945" height="100" hspace="2">
- <br> <br>
-<ul valign="center">
-<li><img src="logo1.png" width="50" height="40" hspace="40"></li>
-
+<div id="headers">
+<ul valign="left">
+<li><img src="mm.png" width="75" height="60" hspace="2px"></li>
+  <li ><a style="color:green; font:20px"href="Home.html">Movie Mania</a></li>
   <li><a href="http://www.imdb.com/list/ls062407689/">Movies</a></li>
   <li><a href="#news">Sitcoms</a></li>
   <li class="dropdown">
@@ -43,15 +53,18 @@ h3 {
 
     </div>
   </li> 
-  <li> <input placeholder="Search for Movie, Sitcom, Trailor and many more ..." type="text" name="search" size="60" text-align="right">
-   <a href="https://www.youtube.com">   <img src="srch.png" width="15" height="15" hspace="2"> </a> </li>
+  <li style="float:right"> <input placeholder="Search for Movie, Sitcom, Trailor and many more ..." type="text" name="search" size="40" text-align="right">
+   <a href="https://www.youtube.com">   <img id="searchimg"src="bwsrc.png" width="20" height="20" hspace="2"> </a> </li>
 </ul>
+</div>
 
+<div id="margins">
 <font face="verdana">
+<p id="naviReached">Home > Top Bollywood Movies </p>
+<h3 align="left"> Upcoming Bollywood Movies</h3>
 
 
-
-<div style="float:left;margin-top:40px;">
+<div style="float:left;padding-top:40px;">
 <video width="680" controls>
   <source src="https://www.youtube.com/watch?v=8j9zMok6two" type="video/mp4">
   Your browser does not support HTML5 video.
@@ -81,12 +94,12 @@ Our rating : 93.6 IMDb
 
 <div style="width:650px; float:left;padding-left:30px;background-color:rgb(242, 242, 242);">
 <br>
-<p><p style="color:rgb(26, 26, 26)"><b>Top Reviews</b></p>
+<p id="tr" style="color:rgb(26, 26, 26)"><b>Top Reviews</b></p>
 
 <div style="background-color:hsl(0, 0%, 99%);margin-right:30px;padding:10px 10px 0px 10px;">
 <!--<p><p style="color:rgb(26, 26, 26)"><b>Arti</b></p>-->
 <div style="float:left">
-<p><p style="color:rgb(26, 26, 26);font-size:20px;"><b>Arti </b></p>
+<p><p style="color:rgb(26, 26, 26);font-size:14px;"><b>Arti </b></p>
 </div>
 <div style="float:left; margin-left:10px">
 <img src="strans.png" width="170px"  height="70px">
@@ -111,7 +124,7 @@ Rating : 5 stars
 <div style="background-color:hsl(0, 0%, 99%);margin-right:30px;padding:10px 10px 0px 10px;">
 <!--<p><p style="color:rgb(26, 26, 26)"><b>Arti</b></p>-->
 <div style="float:left">
-<p><p style="color:rgb(26, 26, 26);font-size:20px;"><b>Rasika </b></p>
+<p><p style="color:rgb(26, 26, 26);font-size:14px;"><b>Rasika </b></p>
 </div>
 <div style="float:left; margin-left:10px">
 <img src="strans.png" width="170px"  height="70px">
@@ -144,9 +157,9 @@ Rating : 5 stars
 <img id="ii" src="pic3.jpg" width="100px"  height="120px" align="left">
 <img id="ii" src="pic4.jpg" width="100px"  height="120px" align="left">
 </div>
-<hr>
-</div>
 
+</div>
+</div>
 
 <!--
 <div style="background-color:hsl(0, 0%, 99%);margin-right:30px;">

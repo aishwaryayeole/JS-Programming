@@ -1,0 +1,11 @@
+table, tr, td {
+	padding: 20px;
+	font : 24px Arial, sans-serif;
+}
+
+th {
+	font : 24px Arial, sans-serif;
+}
+
+a img { display:none; }
+ a:hover img { display:block; }

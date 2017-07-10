@@ -1,0 +1,175 @@
+<html>
+<head>
+ <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link rel="stylesheet" href="movieCSS.css"></link>
+
+
+<title> MovieBuzz </title>
+<style>
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+h3 {
+    color: #424242;
+    font: 24px Arial,sans-serif;
+    font-weight: normal;
+}
+#ii {
+    padding:5px;
+}
+#headers {
+	margin: -10px 0 0 0;
+	width: 100%;
+}
+#margins {
+	margin:0px 160px 20px 150px;
+}
+#naviReached {
+	color: #424230;
+    font: 12px Arial,sans-serif;
+    font-weight: normal;
+}
+#searchimg{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1px;
+	line-height: 30px;
+}
+.imgcl, a#q{
+	text-decoration:none;
+	width: 200px; 
+	height: 300px; 
+	padding: 10px 5px 10px 5px;
+}
+.button {
+  width: 100px;
+  height: 50px;
+  background-color: #FFFFFF;
+  color: #424242;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 30px;
+  border:1px solid black;
+  font: 12px Arial, sans-serif;
+  text-align: center; 
+  display: table-cell;
+  vertical-align: middle;
+  
+}
+.button:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+#choice{
+	padding: 10px;
+}
+</style>
+
+</head>
+<body>
+
+<div id="headers">
+
+<ul valign="left">
+<li><img src="mm.png" width="75" height="60" hspace="2px"></li>
+  <li ><a style="color:green; font:20px"href="Discover.html">Movie Mania</a></li>
+  <li><a href="http://www.imdb.com/list/ls062407689/">Movies</a></li>
+  <li><a href="#news">Sitcoms</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Genres</a>
+    <div class="dropdown-content">
+      <a href="#">Horror</a>
+      <a href="#">Comedy</a>
+      <a href="#">Thriller</a>
+      <a href="#">Action</a>
+      <a href="#">Romantic</a>
+      <a href="#">Animation</a>
+
+    </div>
+  </li> 
+  <li style="float:right"> <input placeholder="Search for Movie, Sitcom, Trailor and many more ..." type="text" name="search" size="40" text-align="right">
+   <a href="https://www.youtube.com">   <img id="searchimg"src="bwsrc.png" width="20" height="20" hspace="2"> </a> </li>
+</ul>
+</div>
+
+
+<div id="margins">
+
+<div id="choice">
+<div class="button">Comedy</div>
+<div class="button">Romance</div>
+<div class="button">Thriller</div>
+
+<script>
+var t=0;
+var button = document.querySelector(".button");
+
+button.onclick = function() {
+  if(t == 0){
+	t=1;
+	this.style.backgroundColor = "#228B22";
+  }
+  else {
+	t=0;
+	this.style.backgroundColor = "white";
+  }
+ 
+};
+</script>
+</div>
+
+<a id="q" href="singlepg.html">
+<img class="imgcl" src="dangal.jpg" >
+</a>
+
+<a id="q" href="singlepg.html">
+<img class="imgcl" src="airlift.jpg" width="200“ height="300" hspace="5">
+</a> 
+
+<a id="q" href="singlepg.html">
+<img class="imgcl" src="fan.jpg" width="200" height="300" hspace="5">
+</a>
+
+<a id="q" href="singlepg.html">
+<img class="imgcl" src="dz.jpg" width="200" height="300" hspace="5">
+</a>
+
+
+<a id="q" href="singlepg.html">
+<img class="imgcl" src="jagga.jpg" width="200" height="300" hspace="5">
+</a>
+
+<a id="q" href="singlepg.html">
+<img class="imgcl" src="badho.jpg" width="200“ height="500" hspace="5">
+</a> 
+
+<a id="q" href="singlepg.html">
+<img class="imgcl" src="m1.jpg" width="200" height="300" hspace="5"
+</a>
+
+<a id="q" href="singlepg.html">
+<img class="imgcl" src="mub.jpg" width="200" height="300" >
+</a>
+
+<a id="q" href="singlepg.html">
+<img class="imgcl" src="13r.jpg" width="200" height="300" hspace="5">
+</a>
+
+<a id="q" href="singlepg.html">
+<img class="imgcl" src="st.jpg" width="200“ height="300" hspace="5">
+</a> 
+
+<a id="q" href="singlepg.html">
+<img class="imgcl" src="narcos.jpg" width="200" height="300" >
+</a>
+
+<a id="q" href="singlepg.html">
+<img class="imgcl" src="sense8.jpg" width="200" height="300" >
+</a>
+
+</div>
+</div>
+
+</body>
+</html>

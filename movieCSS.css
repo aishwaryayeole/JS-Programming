@@ -10,13 +10,22 @@ li {
     float: left;
 }
 
+
 li a, .dropbtn {
-    display: inline-block;
+    /*display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none;*/
+	font: 15px Arial,sans-serif;
+	display: inline-block;
+    padding: 20px 8px;
+    font-weight: 600;
+    line-height: 25px;
+    color: rgba(255,255,255,0.75);
+	text-decoration: none;
 }
+
 
 li a:hover, .dropdown:hover .dropbtn {
     background-color: green;
@@ -49,10 +58,21 @@ li.dropdown {
     display: block;
 }
 
-#first_box{
-	background-color: #0E022E;
-	padding-bottom: 50px;
-	font-weight: bold;
-	width: 200px;
-	height: 50px;
+input[type=text] {
+    width: 50px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 90%;
 }
