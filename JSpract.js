@@ -1,12 +1,11 @@
-function prime()
+function prime(number)
 {
-	var number1 = document.getElementById("nump1").value;
-	var number2 = document.getElementById("nump2").value;
+	var num=number;
 	var flag=0;
-	 for(var i=2; i<=number1/2; i++)
+	 for(var i=2; i<=num/2; i++)
     {
        
-        if(number1%i==0)
+        if(num%i==0)
         {
             flag=1;
             break;
@@ -14,14 +13,21 @@ function prime()
     }
 
     if (flag==0)
-					alert(number1 +"is a prime number.");
+					alert(num +"is a prime number.");
     else
-					alert(number1 +"is Not a prime number.");
+					alert(num +"is Not a prime number.");
     
-    return 0;
+    }
+
+function checkPrime()
+{
+	var number1 = document.getElementById("nump1").value;
+	var number2 = document.getElementById("nump2").value;
+	
+	prime(number1);
+	prime(number2);
+	
 }
-
-
 
 function showBDate()
 {
@@ -140,5 +146,42 @@ function verficn()
 
 function arr_op()
 {
-	var arr[10];
+	var arr;
+	var ele = document.getElementById("arr").value;
+	arr.push(ele);
+
+	var arr2=[9,6,7,12,4]; 
+	var total;
+	for( var i=0;i<5;i++)
+	{
+		total+=arr2[i];
+	}
+	var avg=total/5;
+	
+	var max=Math.max.apply(null, arr2);
+	var min=Math.min.apply(null, arr2);
+
+
+	document.getElementById("op").innerHTML = max;
+	
+}
+
+opChar()
+{
+	var str = document.getElementById("vow").value;
+	
+	
+
+}
+
+palnd()
+{		
+alert("String is Palindrome");
+
+	var str = document.getElementById("pal").value;
+	
+	var rev=str.split('').reverse().join();
+	
+	
+
 }
