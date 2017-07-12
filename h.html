@@ -2,7 +2,7 @@
 <head>
  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 <link rel="stylesheet" href="side_nav.css"></link>
-<script src="loginJS.js"></script>
+
 <link rel="stylesheet" href="headerCSS.css"></link>                                                                                                                        
 
 <!-- Loginpop up -->
@@ -15,6 +15,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <!-- Login -->
+
+
+
+<title> MovieBuzz </title>
+
 <style>
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;}
@@ -84,19 +89,7 @@ body {font-family: Verdana,sans-serif;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-h1 {
-	font: 24px Ariel, sans-serif;
-}
-
-
-
-
 </style>
-
-
-
-<title> MovieBuzz </title>
-
 </head>
 <body bgcolor="white" >
 <div id="headers">
@@ -117,10 +110,10 @@ h1 {
 
     </div>
   </li> 
-     <li><a href="exp2.html">All Movies</a></li>
+     <li><a href="exp.html">All Movies</a></li>
 	 
 	  <!-- Login using button -->
-  <button type="button"  class="btn btn-success" style="background: #75b63e; float:right; margin-top:10; margin-bottom:5; margin-right:5; " data-toggle="modal" data-target="#myModal" >Sign in</button>
+  <button type="button"  class="btn btn-success" style="background: #75b63e; float:right; margin-top:10; margin-bottom:5; margin-right:5; padding-top:12; padding-bottom:12" data-toggle="modal" data-target="#myModal" >Sign in</button>
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -139,8 +132,7 @@ h1 {
 			<div class="login-form-main-message"></div>
 			<div class="main-login-form">
 				<div class="login-group">
-					<div class="form-group" >
-					
+					<div class="form-group">
 						<label for="lg_username" class="sr-only">Username</label>
 						<input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="username">
 					</div>
@@ -153,7 +145,7 @@ h1 {
 						<label for="lg_remember">remember</label>
 					</div>
 				</div>
-				<button type="submit" class="login-button" onclick="verficn()"><i class="fa fa-chevron-right"></i></button>
+				<button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
 			</div>
 			<div class="etc-login-form">
 				<p>forgot your password? <a href="#">click here</a></p>
@@ -168,24 +160,8 @@ h1 {
     </div>
   </div> 
 
-  <!--<li style="float:right; margin-top:5"> <input placeholder="Search for Movie, Sitcom, Trailor and many more..." type="text" name="search" size="40" text-align="right">
-   <a href="https://www.youtube.com">   <img id="searchimg"src="bwsrc.png" width="20" height="20" hspace="2"> </a> </li> -->
-   <li style="float:right">
-   <div class="container" >
-		<div class="row" >
-        <div class="col-md-5">
-    		
-            <div class="form-group">
-                <div class="icon-addon addon-sm">
-                    <input type="text" placeholder="Search for Movie, Sitcom, Trailor and many more..." class="form-control" id="email">
-                    <label for="email" class="glyphicon glyphicon-search" rel="tooltip" title="email"></label>
-                </div>
-            </div> 
-		</div>
-		</div>
-</div>
-</li>
-   
+  <li style="float:right; margin-top:5"> <input placeholder="Search for Movie, Sitcom, Trailor and many more..." type="text" name="search" size="40" text-align="right">
+   <a href="https://www.youtube.com">   <img id="searchimg"src="bwsrc.png" width="20" height="20" hspace="2"> </a> </li>
 </ul>
 </div>
 
@@ -255,7 +231,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000); // Change image every 2 seconds
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
 
